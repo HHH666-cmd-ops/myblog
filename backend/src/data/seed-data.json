@@ -1,0 +1,43 @@
+{
+  "profile": {
+    "name": "你的名字",
+    "title": "计算机专业 · 在读学生",
+    "bio": "记录学习笔记、项目实践与思考。相信代码可以表达想法，文字可以沉淀成长。",
+    "email": "your.email@example.com",
+    "github": "https://github.com/example",
+    "location": "中国",
+    "skills": ["JavaScript", "React", "Node.js", "Python", "数据结构"]
+  },
+  "posts": [
+    {
+      "id": "post-001",
+      "slug": "why-fullstack-blog",
+      "title": "为什么用前后端分离搭建个人博客",
+      "summary": "从前端展示到 API 设计，梳理一个可扩展的学生作品集项目结构。",
+      "content": "前后端分离让职责更清晰：前端专注交互与视觉，后端专注数据与接口。\n\n在本项目中，Express 提供 REST API，React 通过 fetch 消费数据。目录按 routes、controllers、services 分层，便于后续接入数据库或鉴权。\n\n作为学生作品，这样的结构既能体现工程化思维，也为简历上的「全栈实践」提供可演示的仓库。",
+      "tags": ["全栈", "架构"],
+      "publishedAt": "2026-05-10",
+      "readMinutes": 4
+    },
+    {
+      "id": "post-002",
+      "slug": "react-hooks-notes",
+      "title": "React Hooks 学习札记",
+      "summary": "useState、useEffect 与自定义 Hook 的常用模式整理。",
+      "content": "useState 管理组件内状态；useEffect 处理副作用，注意依赖数组。\n\n将数据请求封装为 useFetch，可在多个页面复用 loading / error 逻辑。\n\n写组件时优先思考：状态放在哪一层、副作用何时清理。",
+      "tags": ["React", "前端"],
+      "publishedAt": "2026-05-05",
+      "readMinutes": 6
+    },
+    {
+      "id": "post-003",
+      "slug": "first-node-api",
+      "title": "第一次写 Node.js REST API",
+      "summary": "用 Express 搭建文章列表与详情接口的入门记录。",
+      "content": "Express 通过 app.use 挂载路由，控制器调用 service 读取 JSON 数据。\n\n统一错误处理中间件让接口返回格式一致。开发时用 cors 允许本地前端跨域访问。\n\n下一步可以尝试 SQLite 或 MongoDB，把 seed-data 换成真实持久化。",
+      "tags": ["Node.js", "后端"],
+      "publishedAt": "2026-04-28",
+      "readMinutes": 5
+    }
+  ]
+}

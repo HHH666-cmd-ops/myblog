@@ -1,0 +1,17 @@
+# 自动屏蔽敏感文件
+*.log
+*.tmp
+*.bak
+*.env
+.DS_Store
+node_modules/
+target/
+.idea/
+*.properties
+*.yml
+*.yaml
+application-*.yml
+config/
+secret/
+password/
+ip/
